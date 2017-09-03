@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" ng-app="auditorios">
+    <head><!-- Dirección de Sistemas - Gobernación de Boyacá -->
+        <meta charset="utf-8">
+        <title>FORMATO SOLICITUD</title>
+        <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+        <link rel="stylesheet" href="style.css" media="screen">
+        <!-- <link rel="stylesheet" href="style.responsive.css" media="all">-->
+
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+
+
+        <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
+        .ie7 .art-post .art-layout-cell {border:none !important; padding:0 !important; }
+        .ie6 .art-post .art-layout-cell {border:none !important; padding:0 !important; }</style>
+         <script>
+            if (sessionStorage.tipoUsuario!="FU" && sessionStorage.tipoUsuario!="FA")  {
+                location.href="index.html";
+            }
+        </script>
+    </head>
+    <body onload="cargarFormularioSolicitud();" ng-controller="auditoriosCtrl">
+        <div id="art-main">
+            <div class="art-sheet clearfix">
+                <header class="art-header">
+                    <div class="art-shapes"></div>            
+                    <div id="art-flash-area">
+                        <div id="art-flash-container">
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1000" height="250" id="art-flash-object">
+                               <param name="movie" value="images/flash.swf">
+                               <param name="quality" value="high">
+                    	       <param name="scale" value="exactfit">
+                    	       <param name="wmode" value="transparent">
+                    	       <param name="flashvars" value="color1=0xFFFFFF&amp;alpha1=.95&amp;framerate1=24&amp;loop=true&amp;wmode=transparent">
+                                <param name="swfliveconnect" value="true">
+                            <!--[if !IE]>-->
+                                <object type="application/x-shockwave-flash" data="images/flash.swf" width="1000" height="250">
+                                    <param name="quality" value="high">
+                            	    <param name="scale" value="exactfit">
+                            <param name="wmode" value="transparent">
+                            <param name="flashvars" value="color1=0xFFFFFF&amp;alpha1=.95&amp;framerate1=24&amp;loop=true&amp;wmode=transparent">
+                            <param name="swfliveconnect" value="true">
+                        <!--<![endif]-->
+                          	<div class="art-flash-alt"><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"></a></div>
+                        <!--[if !IE]>-->
+                        </object>
+                        <!--<![endif]-->
+                    </object>
+                    </div>
+                    </div>
+                    
+</header>
+<nav class="art-nav">
+    <a ng-hide="formVisibility" ng-click="cerrarSesion()" id="salirBoton">Cerrar Sesión</a>
+    <ul class="art-hmenu"><li><a href="auditorio.html" class="active">Auditorio</a><ul class="active"><li><a href="home/new-page.html">Subpage 1</a></li><li><a href="home/new-page-2.html">Subpage 2</a></li><li><a href="home/new-page-3.html">Subpage 3</a></li></ul></li><li><a href="#">Blog</a></li></ul> 
+    </nav>
+<div class="art-layout-wrapper">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content"><article class="art-post art-article">
+                                <h2 class="art-postheader"><CENTER> ADMINISTRADOR DE AUDITORIOS</CENTER></h2>
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
+    <div class="art-content-layout-row">
+    <div class="art-layout-cell layout-item-0" style="width: 100%" >
+
+        <div id="contenido" ><!--CONTENDOR RESERVAS-->
+            <h3> <center> FORMATO SOLICITUD </center> </h3>
+            <div id="flip1"><H3 id="tituloFormulario1" >Información de la solicitud</H3></div>
+            <FORM>
+                <DIV id="panel1" > 
+
+                    <div id="labelNombreS"> Nombre: </div>
+                    <input type="text" id="nombreFormS" name="nombre_form"/>
+
+                    <div id="labelSectorialS"> Sectorial o Dependencia : </div>
+                    <input type="text" id="SectorialFormS" name="direccion_form"/>
+
+                    <div id="labelCelularS"> Celular: </div>
+                    <input type="text" id="celularFormS" name="celular_form"/>
+
+                    <div id="labelTelefonoS"> Telefono: </div>
+                    <input type="text" id="telefonoFormS" name="telefono_form"/>
+
+                    <div id="labelExtencionS"> Extensión: </div>
+                    <input type="text" id="extencionFormS" name="direccion_form"/>
+
+                    <div id="labelFechaSolicitud"> Fecha solicitud :</div>
+                    <input type="date" id="fechaSolicitudFormS" disabled>
+
+                    <div id="labelNombreAuditorioS"> Auditorio :</div>
+                    <input type="text" id="NombreAuditorioFormS" name="nombreAuditorio_form"/>
+
+                    <div id="labelFechaInicioS"> Fecha inicio reserva:</div>
+                    <input type="date" id="fechaInicioFormS" disabled>
+
+                    <div id="labelFechaFinS"> Fecha final reserva :</div>
+                    <input type="date" id="fechafinFormS" disabled>
+
+                </DIV>
+
+                <div id="flip2">
+                    <h3 id="tituloFormulario2">Mantenimiento y adecuación de inmueble</h3>
+                </div>
+                <div id="panel2">
+                    
+                    <input type="checkbox" name="div3" value="Arreglo De Inmueble"> Arreglo de inmuebles<br>
+                    <input type="checkbox" name="div3" value="Cambio De Vidrios"> Cambio de vidrios<br>
+                    <input type="checkbox" name="div3" value="Hidraulico y Sanitarios"> Hidraulico y sanitarios<br>
+                    <input type="checkbox" name="div3" value="Adecuacion De Espacios"> Adecuación de espacios<br>
+                    <input type="checkbox" name="div3" value="Resanes, Pañetes y Pinturas"> Resanes, pañetes y pintura<br>
+                    <input type="checkbox" name="div3" value="Chapas y Cerraduras"> Chapas y cerraduras<br>
+                    <input type="checkbox" name="div3" value="Cubierta"> Cubierta<br>
+                    <input type="checkbox" name="div3" value="Pisos"> Pisos<br>
+                    <h4>Otros ?</h4>
+                    <textarea name="div5" rows="5" cols="5" id="otrosTipo"></textarea>
+                </div>
+
+                <div id="flip3"><H3 id="tituloFormulario3">Apoyo Logistico</H3></div>
+                <DIV  id="panel3" required>
+                    <input type="checkbox" name="div4" value="Prestamo Auditorio"> Préstamo Auditorio<br>
+                    <input type="checkbox" name="div4" value="Prestamo Sillas"> Préstamo sillas<br>
+                    <input type="checkbox" name="div4" value="Prestamo Banderas"> Préstamo Banderas<br>
+                    <input type="checkbox" name="div4" value="Estacion De Cafe"> Estación de cafe<br>
+                    <input type="checkbox" name="div4" value="Alimentacion"> Alimentación<br>
+                    <input type="checkbox" name="div4" value="Hospedaje"> Hospedaje<br>
+                    <input type="checkbox" name="div4" value="Refrigerios"> Refrigerios<br>
+                    <h4>Otros ?</h4>
+                    <textarea name="div5" rows="5" cols="5" id="otrosApoyo"></textarea>
+                </DIV>
+
+                <div id="flip4"><h3 id="tituloFormulario4">Descripción de la solicitud</h3></div>
+                <div  id="panel4"><h4>Especificar,lugar,fecha,hora,cantidad,cuales ,etc</h4>
+                    <textarea id="textDescripcionSolicitud" name="div5" rows="10" cols="40" required></textarea>
+                </div> 
+                <input type="button" id="solicitarBotonS" value="Solicitar" onClick="registrarReserva();"/>
+            </FORM> 
+
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+                                
+                
+
+</article></div>
+                        <div class="art-layout-cell art-sidebar1"><div class="art-vmenublock clearfix">
+        <div class="art-vmenublockheader">
+            <h3 class="t">VMenu</h3>
+        </div>
+        <div class="art-vmenublockcontent">
+<ul class="art-vmenu"><li><a href="home.html" class="active">Home</a><ul class="active"><li><a href="home/new-page.html">Subpage 1</a></li><li><a href="home/new-page-2.html">Subpage 2</a></li><li><a href="home/new-page-3.html">Subpage 3</a></li></ul></li><li><a href="blog.html">Blog</a></li></ul>
+                
+        </div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Menú Principal</h3>
+        </div>
+         <div class="art-blockcontent"><ul><li class="active"><a href="#">Home</a></li><li class="parent"><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#">FAQ</a></li><li><a href="#">Hyperlink</a></li><li><a href="#" class="visited">Visited link</a></li><li><a href="#" class="hover">Hovered link</a></li></ul></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Sondeos</h3>
+        </div>
+        <div class="art-blockcontent"><form action="index.php" method="post" name="form2"><table width="95%" border="0" cellspacing="0" cellpadding="1" align="center" class="poll"><thead><tr><td style="font-weight: bold;"></td></tr></thead><tbody><tr><td align="center"><table class="pollstableborder" cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="sectiontableentry2" valign="top"><input type="radio" name="voteid" id="voteid1" value="1" alt="1"></td><td class="sectiontableentry2" valign="top"><label for="voteid1">Community Sites</label></td></tr><tr><td class="sectiontableentry1" valign="top"><input type="radio" name="voteid" id="voteid2" value="2" alt="2"></td><td class="sectiontableentry1" valign="top"><label for="voteid2">Public Brand Sites</label></td></tr><tr><td class="sectiontableentry2" valign="top"><input type="radio" name="voteid" id="voteid3" value="3" alt="3"></td><td class="sectiontableentry2" valign="top"><label for="voteid3">eCommerce</label></td></tr><tr><td class="sectiontableentry1" valign="top"><input type="radio" name="voteid" id="voteid4" value="4" alt="4"></td><td class="sectiontableentry1" valign="top"><label for="voteid4">Blogs</label></td></tr><tr><td class="sectiontableentry2" valign="top"><input type="radio" name="voteid" id="voteid5" value="5" alt="5"></td><td class="sectiontableentry2" valign="top"><label for="voteid5">Intranets</label></td></tr><tr><td class="sectiontableentry1" valign="top"><input type="radio" name="voteid" id="voteid6" value="6" alt="6"></td><td class="sectiontableentry1" valign="top"><label for="voteid6">Photo and Media Sites</label></td></tr><tr><td class="sectiontableentry2" valign="top"><input type="radio" name="voteid" id="voteid7" value="7" alt="7"></td><td class="sectiontableentry2" valign="top"><label for="voteid7">All of the Above!</label></td></tr></tbody></table></td></tr><tr><td><div align="center"><input type="submit" value="Vote" name="task_button" class="art-button" style="zoom: 1; "><input type="submit" value="Results" name="option" class="art-button" style="zoom: 1; "></div></td></tr></tbody></table></form></div>
+</div><div class="art-block clearfix">
+        <div class="art-blockheader">
+            <h3 class="t">Block</h3>
+        </div>
+        <div class="art-blockcontent"><p>Enter Block content here...</p>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris.</p></div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer">
+<p><b style="font-size: 13px;">GOBERNACIÓN DE BOYACÁ</b></p>
+<p><span style="font-size: 13px;">Calle 20 No. 9 - 90 Casa de la Torre Tunja - Boyacá</span></p>
+<p><span style="font-size: 13px;">Horario de Atención: Lunes a Viernes, 8:00 a.m. a 12:00 m - 2:00 p.m. a 6:00 p.m.</span></p>
+<p><span style="font-size: 13px;">PBX+ (57) 8742 0150 / 8742 0222</span></p>
+<p><span style="font-size: 13px;">NIT Gobernación de Boyacá: 891 800 498-1 --- Código DANE: 15</span></p>
+<p>
+</p><p><a href="http://localhost/Gobernacion/index.php/gobernacion/politicas-de-privacidad-y-terminos-de-uso" style="font-size: 13px;">Politicas de Privacidad y Uso</a></p>
+ 
+
+ 
+<p><span style="font-size: 13px;">Copyright © 2013. All Rights Reserved.</span></p>
+</footer>
+
+    </div>
+</div>
+
+
+
+</body></html>
+
