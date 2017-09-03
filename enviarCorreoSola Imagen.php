@@ -10,6 +10,10 @@
 	$tamanoArchivo1 = $_FILES['file1']['size'];
 	$tipoArchivo1 = $_FILES['file1']['type'];
 
+	$nombreImagen1=$_FILES['file1']['name'];
+	$tamanoArchivo1 = $_FILES['file1']['size'];
+	$tipoArchivo1 = $_FILES['file1']['type'];
+	
 	$nombreImagen2=$_FILES['file2']['name'];
 	$tamanoArchivo2 = $_FILES['file2']['size'];
 	$tipoArchivo2 = $_FILES['file2']['type'];
