@@ -14,8 +14,8 @@
 	$tamanoArchivo2 = $_FILES['file2']['size'];
 	$tipoArchivo2 = $_FILES['file2']['type'];
 
-	// $para      = 'info@mundopets.com.co,lapptiveco@gmail.com';  
 	$para      = 'lapptiveco@gmail.com';  
+	$titulo    = 'Denuncia de maltrato animal';
 	$titulo    = 'Denuncia de maltrato animal';
 
 	$cabeceras 	= "MIME-version: 1.0\r\n";
